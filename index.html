@@ -58,173 +58,324 @@
         .section-title {
             margin: 60px 0 0 0;
         }
+
         .wedding-content {
             color: #f84d00;
         }
-        .wedding-date.text-capitalize{
+
+        .wedding-date.text-capitalize {
             font-size: xx-large;
         }
+
         .ourstory-all-sections p {
             color: #cdbf79 !important;
+        }
+
+
+        .loader-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #000;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .main-content {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: fit-content;
+        }
+
+        .countdown-item {
+            text-align: center;
+            font-size: 5rem;
+            color: #f84d00;
+            margin: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .profile-photo-container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            /* Adjust the border color */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            /* Add a subtle shadow */
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .main-content .ourstory-section {
+            background-color: transparent !important;
+            border: none !important;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 
 <body class="body-background">
-    <div class="logo-banner ">
-        <img class="logo-image image"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEaFPeF4FcbQBmcA8q_FXJlRK-ck9vFm2xZw&usqp=CAU"
-            alt="Your Image">
+    <div class="loader-wrapper">
+        <img src="./loader.gif" alt="Loading...">
     </div>
-    <section class="title">
-        <div class="wedding-content text-center">
-            <h1 class="couple-name">PUSPEN &amp; SHYAMALI</h1>
-            <div class="wedding-date text-capitalize">January 31, 2024</div>
-            <div class="wedding-venue text-capitalize">Jambad, West Bengal</div>
+    <div class="main-content">
+        <div class="logo-banner ">
+            <img class="logo-image image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEaFPeF4FcbQBmcA8q_FXJlRK-ck9vFm2xZw&usqp=CAU"
+                alt="Your Image">
         </div>
-    </section>
-    <div class="image-banner ">
-        <img class="image" src="https://i.pinimg.com/564x/ee/e9/35/eee93591df5f9f9afca96dd76721c9aa.jpg"
-            alt="Your Image">
-        <div class="overlay-text">
-        </div>
-    </div>
-    <section class="ourstory content-section" id="our_story">
-        <div class="container">
-            <div class="section-title"> Groom & Bride </div>
-            <div class="content-list">
-                <h5 class="time-line-divider"></h5>
-                <div class="row ourstory-all-sections">
-                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
-                        <div class="ourstory-section">
-                            <figure id="story-1-img" class="ourstory-img">
-                                <img src="./puspen.jpg" class="imagename">
-                            </figure>
-                            <p id="our-success-story-1-text2">
-                                PUSPEN SARKAR
-                                <br />
-                                S/O MANORANJAN SARKAR, CHHABI SARKAR
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
-                        <div class="ourstory-section">
-                            <figure id="story-2-img" class="ourstory-img">
-                                <img src="./shayamli.jpg" class="imagename">
-                            </figure>
-                            <p id="our-success-story-2-text2">
-                                SHYAMALI MAHATO
-                                <br />
-                                S/O MATILAL MAHATO, SULEKHA MAHATO
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <section class="title">
+            <div class="wedding-content text-center">
+                <h1 class="couple-name">PUSPEN &amp; SHYAMALI</h1>
+                <div class="wedding-date text-capitalize">January 31, 2024</div>
+                <div class="wedding-venue text-capitalize">Jambad, West Bengal</div>
+            </div>
+        </section>
+        <div class="image-banner ">
+            <img class="image" src="./20231021_182649.png" alt="Your Image">
+            <div class="overlay-text">
             </div>
         </div>
-    </section>
-    <section class="functions content-section" id="functions">
-        <div class="container">
-            <div class="section-title"> Functions </div>
-            <div class="content-list">
-
-                <div class="row events-container">
-                    <div class="col-sm-hidden col-md-7">
-                        <div class="image-container-1">
-                            <div id="event-3-img" class="event-img"><img
-                                    src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-haldi.jpg"
-                                    alt="wedding-website-functions-thumbnail-3"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-5 event-description-wrapper">
-                        <div class="event-description-container">
-                            <div class="event-description">
-                                <h3 id="event-3-name" class="event-name">Haldi</h3>
-                                <div class="image-container-2">
-                                    <div id="event-3-img" class="event-img"><img
-                                            src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-haldi.jpg"
-                                            alt="wedding-website-functions-thumbnail-3"> </div>
+        <section class="ourstory content-section countdown">
+            <div class="countdown-container">
+                <div id="days" class="countdown-item"></div>
+                <div id="hours" class="countdown-item"></div>
+                <div id="minutes" class="countdown-item"></div>
+                <div id="seconds" class="countdown-item"></div>
+            </div>
+        </section>
+        <section class="ourstory content-section" id="our_story">
+            <div class="container">
+                <div class="section-title"> Groom & Bride </div>
+                <div class="content-list">
+                    <h5 class="time-line-divider"></h5>
+                    <div class="row ourstory-all-sections">
+                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
+                            <div class="ourstory-section">
+                                <!-- <figure id="story-1-img" class="ourstory-img">
+                                    <img src="./puspen.jpg" class="imagename">
+                                </figure> -->
+                                <div class="profile-photo-container">
+                                    <img src="./puspen1.jpg" alt="Profile Photo" class="profile-photo">
                                 </div>
-                                <div id="event-3-day" class="event-date">31 st january 2024</div><br>
-
-                                <address> <span id="event-4-map" class="event-map"> Jambad, West Bengal,<br>723128
-                                        <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
-                                                type="button" id="map_2" title="View Map"
-                                                style="text-decoration:none !important;box-shadow:none;"
-                                                href="https://www.google.com/maps/place/Jambad,+West+Bengal+723128/@23.2130156,86.5700931,16z/data=!4m6!3m5!1s0x39f6677ac39d3007:0xcf9fc587cc494fe0!8m2!3d23.2134234!4d86.5722478!16s%2Fg%2F1hd_5bljv"
-                                                class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
-                                    </span>
-                                </address>
-                                <div style="margin:10px 0;padding-bottom:30px;"></div>
+                                <p id="our-success-story-1-text2">
+                                    PUSPEN SARKAR
+                                    <br />
+                                    S/O MANORANJAN SARKAR, CHHABI SARKAR
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row events-container">
-                    <div class="col-sm-hidden col-md-7">
-                        <div class="image-container-1">
-                            <div id="event-4-img" class="event-img"><img
-                                    src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-wedding.jpg"
-                                    alt="wedding-website-functions-thumbnail-4"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-5 event-description-wrapper">
-                        <div class="event-description-container">
-                            <div class="event-description">
-                                <h3 id="event-4-name" class="event-name">Wedding</h3>
-                                <div class="image-container-2">
-                                    <div id="event-4-img" class="event-img"><img
-                                            src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-wedding.jpg"
-                                            alt="wedding-website-functions-thumbnail-4"> </div>
+                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
+                            <div class="ourstory-section">
+                                <div class="profile-photo-container">
+                                    <img src="./shamyali1.jpg" alt="Profile Photo" class="profile-photo">
                                 </div>
-                                <div id="event-4-day" class="event-date">31 st january 2024</div><br>
-                                <address> <span id="event-4-map" class="event-map"> Jambad, West Bengal,<br>723128
-                                        <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
-                                                type="button" id="map_2" title="View Map"
-                                                style="text-decoration:none !important;box-shadow:none;"
-                                                href="https://www.google.com/maps/place/Jambad,+West+Bengal+723128/@23.2130156,86.5700931,16z/data=!4m6!3m5!1s0x39f6677ac39d3007:0xcf9fc587cc494fe0!8m2!3d23.2134234!4d86.5722478!16s%2Fg%2F1hd_5bljv"
-                                                class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
-                                    </span>
-                                </address>
-                                <div style="margin:10px 0;padding-bottom:30px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row events-container">
-                    <div class="col-sm-hidden col-md-7">
-                        <div class="image-container-1">
-                            <div id="event-5-img" class="event-img"><img
-                                    src="https://cdn.weddingwishlist.com/images/website/functions/reception.jpg"
-                                    alt="wedding-website-functions-thumbnail-5"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-5 event-description-wrapper">
-                        <div class="event-description-container">
-                            <div class="event-description">
-                                <h3 id="event-5-name" class="event-name">Reception</h3>
-                                <div class="image-container-2">
-                                    <div id="event-5-img" class="event-img"><img
-                                            src="https://cdn.weddingwishlist.com/images/website/functions/reception.jpg"
-                                            alt="wedding-website-functions-thumbnail-5"> </div>
-                                </div>
-                                <div id="event-5-day" class="event-date">2nd february 2024</div><br>
-                                <address> <span id="event-4-map" class="event-map"> Jambad, West Bengal,<br>723128
-                                        <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
-                                                type="button" id="map_2" title="View Map"
-                                                style="text-decoration:none !important;box-shadow:none;"
-                                                href="https://www.google.com/maps/place/Jambad,+West+Bengal+723128/@23.2130156,86.5700931,16z/data=!4m6!3m5!1s0x39f6677ac39d3007:0xcf9fc587cc494fe0!8m2!3d23.2134234!4d86.5722478!16s%2Fg%2F1hd_5bljv"
-                                                class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
-                                    </span>
-                                </address>
-                                <div style="margin:10px 0;padding-bottom:30px;"></div>
+                                <!-- <figure id="story-2-img" class="ourstory-img">
+                                    <img src="./shamyali.jpg" class="imagename">
+                                </figure> -->
+                                <p id="our-success-story-2-text2">
+                                    SHYAMALI MAHATO
+                                    <br />
+                                    D/O MATILAL MAHATO, SULEKHA MAHATO
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="functions content-section" id="functions">
+            <div class="container">
+                <div class="section-title"> Functions </div>
+                <div class="content-list">
+
+                    <div class="row events-container">
+                        <div class="col-sm-hidden col-md-7">
+                            <div class="image-container-1">
+                                <div id="event-3-img" class="event-img"><img
+                                        src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-haldi.jpg"
+                                        alt="wedding-website-functions-thumbnail-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 event-description-wrapper">
+                            <div class="event-description-container">
+                                <div class="event-description">
+                                    <h3 id="event-3-name" class="event-name">Haldi</h3>
+                                    <div class="image-container-2">
+                                        <div id="event-3-img" class="event-img"><img
+                                                src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-haldi.jpg"
+                                                alt="wedding-website-functions-thumbnail-3"> </div>
+                                    </div>
+                                    <div id="event-3-day" class="event-date">31 st january 2024</div><br>
+
+                                    <address> <span id="event-4-map" class="event-map"> Jambad, West Bengal,<br>723128
+                                            <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
+                                                    type="button" id="map_2" title="View Map"
+                                                    style="text-decoration:none !important;box-shadow:none;"
+                                                    href="https://www.google.com/maps/place/Jambad,+West+Bengal+723128/@23.2130156,86.5700931,16z/data=!4m6!3m5!1s0x39f6677ac39d3007:0xcf9fc587cc494fe0!8m2!3d23.2134234!4d86.5722478!16s%2Fg%2F1hd_5bljv"
+                                                    class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
+                                        </span>
+                                    </address>
+                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row events-container">
+                        <div class="col-sm-hidden col-md-7">
+                            <div class="image-container-1">
+                                <div id="event-4-img" class="event-img"><img
+                                        src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-wedding.jpg"
+                                        alt="wedding-website-functions-thumbnail-4"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 event-description-wrapper">
+                            <div class="event-description-container">
+                                <div class="event-description">
+                                    <h3 id="event-4-name" class="event-name">Wedding</h3>
+                                    <div class="image-container-2">
+                                        <div id="event-4-img" class="event-img"><img
+                                                src="https://cdn.weddingwishlist.com/images/website/functions/wedding-function-wedding.jpg"
+                                                alt="wedding-website-functions-thumbnail-4"> </div>
+                                    </div>
+                                    <div id="event-4-day" class="event-date">31 st january 2024</div><br>
+                                    <address> <span id="event-4-map" class="event-map"> Urma, West Bengal,<br>723143
+                                            <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
+                                                    type="button" id="map_2" title="View Map"
+                                                    style="text-decoration:none !important;box-shadow:none;"
+                                                    href="https://www.google.com/maps/place/Urma,+West+Bengal+723143/@23.1639859,86.2618053,16z/data=!3m1!4b1!4m6!3m5!1s0x39f67811de78dbcb:0xf342e4dd3abb4675!8m2!3d23.1641578!4d86.2679155!16s%2Fg%2F1tfj1lhw?entry=ttu"
+                                                    class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
+                                        </span>
+                                    </address>
+                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row events-container">
+                        <div class="col-sm-hidden col-md-7">
+                            <div class="image-container-1">
+                                <div id="event-5-img" class="event-img"><img
+                                        src="https://cdn.weddingwishlist.com/images/website/functions/reception.jpg"
+                                        alt="wedding-website-functions-thumbnail-5"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 event-description-wrapper">
+                            <div class="event-description-container">
+                                <div class="event-description">
+                                    <h3 id="event-5-name" class="event-name">Reception</h3>
+                                    <div class="image-container-2">
+                                        <div id="event-5-img" class="event-img"><img
+                                                src="https://cdn.weddingwishlist.com/images/website/functions/reception.jpg"
+                                                alt="wedding-website-functions-thumbnail-5"> </div>
+                                    </div>
+                                    <div id="event-5-day" class="event-date">2nd february 2024</div><br>
+                                    <address> <span id="event-4-map" class="event-map"> Jambad, West Bengal,<br>723128
+                                            <div id="event-4-maplink" class="event-maplink"> <a target="_blank"
+                                                    type="button" id="map_2" title="View Map"
+                                                    style="text-decoration:none !important;box-shadow:none;"
+                                                    href="https://www.google.com/maps/place/Jambad,+West+Bengal+723128/@23.2130156,86.5700931,16z/data=!4m6!3m5!1s0x39f6677ac39d3007:0xcf9fc587cc494fe0!8m2!3d23.2134234!4d86.5722478!16s%2Fg%2F1hd_5bljv"
+                                                    class="btn btn-link view-map action-link">&nbsp;View Map</a> </div>
+                                        </span>
+                                    </address>
+                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <audio id="audio" autoplay>
+        <source src="./theme18.mp3" type="audio/mp3">
+    </audio>
 </body>
+<script>
+    // Function to play audio and hide loader
+    function playAudioAndHideLoader() {
+        // Hide loader and show content
+        document.querySelector('.loader-wrapper').style.display = 'none';
+        document.querySelector('.main-content').style.display = 'block';
+    }
+    document.addEventListener('click', function () {
+        var audio = document.getElementById('audio');
+        audio.play().catch(function (error) {
+            console.error('Failed to play audio:', error.message);
+        });
+    });
+
+
+    // Simulate a click event after 5 seconds
+    setTimeout(function () {
+        playAudioAndHideLoader();
+    }, 1000);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Target date: January 31
+        var targetDate = new Date('January 31, 2024 00:00:00').getTime();
+
+        // Update the countdown every 1 second
+        var countdownInterval = setInterval(function () {
+            var currentDate = new Date().getTime();
+            var timeDifference = targetDate - currentDate;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById('days').innerText = days + 'd';
+            document.getElementById('hours').innerText = hours + 'h';
+            document.getElementById('minutes').innerText = minutes + 'm';
+            document.getElementById('seconds').innerText = seconds + 's';
+
+            // Check if the countdown has reached zero
+            if (timeDifference <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('days').innerText = '0d';
+                document.getElementById('hours').innerText = '0h';
+                document.getElementById('minutes').innerText = '0m';
+                document.getElementById('seconds').innerText = '0s';
+            }
+        }, 1000);
+    });
+
+</script>
+
 
 </html>
