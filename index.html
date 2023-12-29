@@ -336,17 +336,17 @@
         document.querySelector('.main-content').style.display = 'block';
     }
     document.addEventListener('click', function () {
-        // var audio = document.getElementById('audio');
-        // audio.play().catch(function (error) {
-        //     console.error('Failed to play audio:', error.message);
-        // });
+        var audio = document.getElementById('audio');
+        audio.play().catch(function (error) {
+            console.error('Failed to play audio:', error.message);
+        });
     });
 
 
     // Simulate a click event after 5 seconds
     setTimeout(function () {
         playAudioAndHideLoader();
-    }, 1000);
+    }, 4000);
 
     document.addEventListener('DOMContentLoaded', function () {
         // Target date: January 31
